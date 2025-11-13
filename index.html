@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tidy Techs Website & Software Solutions</title>
+<link rel="icon" type="image/png" href="https://img.icons8.com/fluency/256/cyber-technology.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>TIDY TECHS</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Empowering Businesses Through Modern Technology</h2>
+    <p>We create professional websites and powerful software applications tailored to elevate your brand and streamline your business operations.</p>
+    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Get in Touch</button>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      Tidy Techs is a forward-thinking digital solutions company based in Pretoria.
+      We specialize in crafting sleek, user-friendly websites and building reliable, scalable
+      software applications for businesses of all sizes. Our team combines creativity and
+      technical skill to deliver impactful digital experiences that help your brand grow.
+    </p>
+  </section>
+  <section class="socials">
+  <h3>Connect with us:</h3>
+  <div class="social-links">
+    <a href="https://www.instagram.com/thee_other_jayy" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="social-icon">
+      @thee_other_jayy
+    </a>
+    <a href="https://www.facebook.com/Thee.other.jayy" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="social-icon">
+      Thee other jayy
+    </a>
+    <a href="https://twitter.com/thee_other_jayy" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="social-icon">
+      @thee_other_jayy
+    </a>
+  </div>
+</section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card" style="--bg1:url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&q=80'); --bg2:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80');">
+        <h3>🌐 Website Development</h3>
+        <p>Responsive, fast-loading, and fully optimized websites designed to capture attention and drive engagement.</p>
+      </div>
+
+      <div class="service-card" style="--bg1:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80'); --bg2:url('https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=900&q=80');">
+        <h3>⚙️ Software Applications</h3>
+        <p>Custom-built software tailored to your business workflow—reliable, efficient, and secure systems that are high in performance.</p>
+      </div>
+
+      <div class="service-card" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80');">
+        <h3>🔧 Maintenance & Support</h3>
+        <p>Round-the-clock support to ensure your website and applications run smoothly and stay up-to-date.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <h2>Our Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80" alt="Laptop workspace">
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Modern desktop setup">
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Software development workspace">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center; color:#ccc; margin-bottom:40px; line-height:1.8;">
+      Let's discuss your next project! Reach out and let's build something extraordinary together.
+    </p>
+    <div style="text-align:center; line-height:2.2; font-size:1.1rem;">
+      <p>📧 juniormtshali19@gmail.com</p>
+      <p>📱 +27 66 524 3485</p>
+      <p>📍 Pretoria, South Africa</p>
+      <br>
+      <button class="btn" style="margin-top:20px;" onclick="window.open('https://wa.me/27665243485','_blank');"> Message on WhatsApp </button>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2025 Tidy Techs — All rights reserved </p>
+  </footer>
+
+  <div class="ai-btn" onclick="toggleChat()">🤖</div>
+  <div class="chat-box" id="chatBox">
+    <header>Tidy Techs AI Assistant</header>
+    <div class="messages" id="chatMessages">
+      <p>👋 Hi there! How can I help you today?</p>
+    </div>
+    <input type="text" id="userInput" placeholder="Type your message..." onkeypress="if(event.key==='Enter'){sendMessage()}">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
