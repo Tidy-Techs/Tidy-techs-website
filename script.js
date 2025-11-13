@@ -20,9 +20,3 @@ function sendMessage() {
     msgBox.scrollTop = msgBox.scrollHeight;
   }
 }
-
-
-document.getElementById("menuToggle").addEventListener("click", function () {
-  const nav = document.getElementById("navMenu");
-  nav.classList.toggle("active");
-});
