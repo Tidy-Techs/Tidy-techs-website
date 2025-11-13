@@ -7,7 +7,7 @@ We specialize in **crafting sleek, user-friendly websites** and **building relia
 - Responsive, fast-loading websites
 - Custom software applications tailored to your business
 - Maintenance and support to keep your systems running smoothly
-- Portfolio showcasing previous work
+- Portfolio showcasing work
 
 ## 📱 Contact & Socials
 - **Email:** juniormtshali19@gmail.com  
