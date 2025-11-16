@@ -160,9 +160,9 @@ footer .logo { font-family:'Rajdhani',sans-serif; font-weight:800; color:#fff; f
 .mobile-nav a:hover { background:rgba(255,255,255,0.03); color:var(--accent); }
 
 /* Responsive */
-@media (max-width:450px){ 
-  .hero h1{ font-size:25px;} 
-  .hero p.lead{ font-size:12px; } 
+@media (max-width:480px){ 
+  .hero h1{ font-size:27px;} 
+  .hero p.lead{ font-size:15px; } 
   .service-card .thumb{height:140px;} 
   .site-brand{text-align:left;} 
   .top-right{display:none;}
