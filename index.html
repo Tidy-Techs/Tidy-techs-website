@@ -1,121 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tidy Techs Website & Software Solutions</title>
-  <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/256/cyber-technology.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tidy Techs — IT Services & Repairs | South Africa</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Sidebar -->
-  <div class="sidebar" id="sidebar">
-    <h2>TIDY TECHS</h2>
-    <a href="#home" onclick="toggleSidebar()">Home</a>
-    <a href="#about" onclick="toggleSidebar()">About</a>
-    <a href="#services" onclick="toggleSidebar()">Services</a>
-    <a href="#portfolio" onclick="toggleSidebar()">Portfolio</a>
-    <a href="#contact" onclick="toggleSidebar()">Contact</a>
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="top-left">
+        <i class="fa fa-laptop-code"></i>&nbsp;
+        <span class="muted">Tidy Techs</span> — IT services, fixes & software.
+      </div>
+      <div class="top-right d-none d-md-flex align-items-center">
+        <a href="mailto:juniormtshali19@gmail.com"><i class="fa fa-envelope"></i>&nbsp; juniormtshali19@gmail.com</a>
+      </div>
+    </div>
   </div>
 
-  <!-- Header -->
-  <header>
-    <div class="menu-btn" onclick="toggleSidebar()">☰</div>
-    <h1>TIDY TECHS</h1>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <div class="py-3 header-inner">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:46px;height:46px;border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;">
+            <i class="fa fa-power-off" style="color:var(--accent);font-size:20px"></i>
+          </div>
+          <div class="site-brand">TIDY TECHS</div>
+        </div>
+
+        <!-- desktop nav -->
+        <nav class="d-none d-lg-flex align-items-center">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-right">
+          <a class="tel d-none d-md-inline header-cta" href="tel:+27665243485">+27 66 524 3485</a>
+          <button class="btn btn-light d-lg-none" id="mobile-menu-toggle"><i class="fa fa-bars"></i></button>
+        </div>
+      </div>
+
+      <!-- mobile nav -->
+      <div id="mobile-nav" class="mobile-nav d-lg-none" style="display:none;">
+        <a href="#home"><i class="fa fa-home me-2"></i> Home</a>
+        <a href="#about"><i class="fa fa-info-circle me-2"></i> About</a>
+        <a href="#services"><i class="fa fa-concierge-bell me-2"></i> Services</a>
+        <a href="#contact"><i class="fa fa-envelope me-2"></i> Contact</a>
+      </div>
+    </div>
   </header>
 
-  <section class="hero" id="home">
-    <h2>Empowering Businesses Through Modern Technology</h2>
-    <p>We create professional websites and powerful software applications tailored to elevate your brand and streamline your business operations.</p>
-    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Get in Touch</button>
-  </section>
-
-  <section class="about" id="about">
-    <h2>About Us</h2>
-    <p>
-      Tidy Techs is a forward-thinking digital solutions company based in Pretoria.
-      We specialize in crafting sleek, user-friendly websites and building reliable, scalable
-      software applications for businesses of all sizes. Our team combines creativity and
-      technical skill to deliver impactful digital experiences that help your brand grow.
-    </p>
-  </section>
-
-  <section class="socials">
-    <h3>Connect with us:</h3>
-    <div class="social-links">
-      <a href="https://www.instagram.com/thee_other_jayy" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="social-icon">
-        @thee_other_jayy
-      </a>
-      <a href="https://www.facebook.com/Thee.other.jayy" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="social-icon">
-        Thee other jayy
-      </a>
-      <a href="https://twitter.com/thee_other_jayy" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="social-icon">
-        @thee_other_jayy
-      </a>
-    </div>
-  </section>
-
-  <section class="services" id="services">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <div class="service-card" style="--bg1:url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&q=80'); --bg2:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80');">
-        <h3>🌐 Website Development</h3>
-        <p>Responsive, fast-loading, and fully optimized websites designed to capture attention and drive engagement.</p>
-      </div>
-
-      <div class="service-card" style="--bg1:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80'); --bg2:url('https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=900&q=80');">
-        <h3>⚙️ Software Applications</h3>
-        <p>Custom-built software tailored to your business workflow—reliable, efficient, and secure systems that are high in performance.</p>
-      </div>
-
-      <div class="service-card" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80');">
-        <h3>🔧 Maintenance & Support</h3>
-        <p>Round-the-clock support to ensure your website and applications run smoothly and stay up-to-date.</p>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-7 col-lg-8">
+          <div class="eyebrow">WE BUILD • FIX • SCALE</div>
+          <h1>Reliable IT solutions for small businesses — <span style="color:var(--accent-2)">fast, secure, tidy.</span></h1>
+          <p class="lead">Tidy Techs helps startups, SMEs, Modern solutions without the corporate fluff.</p>
+          <div style="margin-top:18px;">
+            <a class="btn-primary-cta" href="#services">Our Services</a>
+            <a class="btn-outline" href="#contact" style="margin-left:10px;">Get a Quote</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="portfolio" id="portfolio">
-    <h2>Our Portfolio</h2>
-    <div class="portfolio-scroll">
-      <div class="portfolio-item"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80" alt="Laptop workspace"></div>
-      <div class="portfolio-item"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Modern desktop setup"></div>
-      <div class="portfolio-item"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Software development workspace"></div>
-    </div>
-  </section>
+  <main>
 
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p style="text-align:center; color:#ccc; margin-bottom:40px; line-height:1.8;">
-      Let's discuss your next project! Reach out and let's build something extraordinary together.
-    </p>
-    <div style="text-align:center; line-height:2.2; font-size:1.1rem;">
-      <p>📧 juniormtshali19@gmail.com</p>
-      <p>📱 +27 66 524 3485</p>
-      <p>📍 Pretoria, South Africa</p>
-      <br>
-      <button class="btn" style="margin-top:20px;" onclick="window.open('https://wa.me/27665243485','_blank');"> Message on WhatsApp </button>
-    </div>
-  </section>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-title center">
+          <h2>About Tidy Techs</h2>
+          <p class="muted">Tech solutions made simple — Pretoria friendly.</p>
+        </div>
+        <p class="about-text">Tidy Techs delivers honest, transparent IT services: from clean websites and mobile apps to network setups. We focus on practical, secure solutions that scale with your business.</p>
 
-  <footer>
-    <p>© 2025 Tidy Techs — All rights reserved</p>
-    <p> T's & C's Apply</p>
+        <ul class="about-list">
+          <li>Web & Mobile App Development</li>
+          <li>Networking & Wi-Fi Setup</li>
+          <li>Managed IT & Remote Support</li>
+          <li>Hosting & Domains</li>
+          <li>Security & Backups</li>
+        </ul>
+
+        <div class="text-center mt-3">
+          <a class="btn-primary-cta" href="#contact">Request a Call</a>
+          <a class="btn btn-service" href="#services">See Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <h2 style="text-align:center;">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80');"></div>
+          <div class="body">
+            <h4>🌐 Website Development</h4>
+            <p>Responsive, fast-loading, and fully optimized websites designed to capture attention and drive engagement.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80');"></div>
+          <div class="body">
+            <h4>⚙️ Software Applications</h4>
+            <p>Custom-built software tailored to your business workflow—reliable, efficient, and secure systems that are high in performance.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80');"></div>
+          <div class="body">
+            <h4>🔧 Maintenance & Support</h4>
+            <p>Round-the-clock support to ensure your website and applications run smoothly and stay up-to-date.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Get in Touch</h2>
+          <p class="muted">Tell us your issue or project — we'll get back within 24 hours.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <form id="contactForm" action="contact.php" method="POST">
+              <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Full name" required></div>
+              <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email address" required></div>
+              <div class="mb-3"><input class="form-control" type="tel" name="phone" placeholder="Phone (optional)"></div>
+              <div class="mb-3"><textarea class="form-control" name="message" rows="5" placeholder="Tell us about your needs" required></textarea></div>
+              <button class="btn-primary-cta" type="submit">Send Message</button>
+            </form>
+          </div>
+
+          <div class="col-md-6">
+            <div class="contact-card">
+              <h5 style="margin-bottom:6px;">Hours</h5>
+              <p>Mon — Fri: 08:00 — 17:00</p>
+              <div class="socials">
+                <h3>Connect with us:</h3>
+                <div class="social-links">
+                  <a href="https://www.instagram.com/thee_other_jayy" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+                    @thee_other_jayy
+                  </a>
+                  <a href="https://www.facebook.com/Thee.other.jayy" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+                    Thee other jayy
+                  </a>
+                  <a href="https://twitter.com/thee_other_jayy" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+                    @thee_other_jayy
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <div class="logo">TIDY TECHS</div>
+      <p class="muted mt-2">© 2025 Tidy Techs. All rights reserved.</p>
+    </div>
   </footer>
 
-  <div class="ai-btn" onclick="toggleChat()">🤖</div>
-  <div class="chat-box" id="chatBox">
-    <header>Tidy Techs AI Assistant</header>
-    <div class="messages" id="chatMessages">
-      <p>👋 Hi there! How can I help you today?</p>
-    </div>
-    <input type="text" id="userInput" placeholder="Type your message..." onkeypress="if(event.key==='Enter'){sendMessage()}">
-  </div>
-
+  <!-- Custom JS -->
   <script src="script.js"></script>
+
 </body>
 </html>
