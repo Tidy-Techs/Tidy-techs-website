@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tidy Techs — IT Services & Repairs | South Africa</title>
 
   <!-- Fonts & Icons -->
@@ -34,7 +34,11 @@
   <header class="site-header">
     <div class="container">
       <div class="py-3 header-inner">
-        <button class="btn btn-light d-lg-none" id="mobile-menu-toggle"><i class="fa fa-bars"></i></button>
+        <!-- mobile menu button placed on the left -->
+        <button class="btn btn-light d-lg-none" id="mobile-menu-toggle" aria-controls="mobile-nav" aria-expanded="false">
+          <i class="fa fa-bars"></i>
+        </button>
+
         <div class="site-brand">TIDY TECHS</div>
 
         <!-- desktop nav -->
@@ -52,27 +56,23 @@
 
       <!-- mobile nav -->
       <div id="mobile-nav" class="mobile-nav d-lg-none" style="display:none;">
-        <a href="#home"><i class="fa fa-home me-2"></i> Home</a>
-        <a href="#about"><i class="fa fa-info-circle me-2"></i> About</a>
-        <a href="#services"><i class="fa fa-concierge-bell me-2"></i> Services</a>
-        <a href="#contact"><i class="fa fa-envelope me-2"></i> Contact</a>
+        <a class="mobile-link" href="#home"> <i class="fa fa-home me-2"></i> Home</a>
+        <a class="mobile-link" href="#about"> <i class="fa fa-info-circle me-2"></i> About</a>
+        <a class="mobile-link" href="#services"> <i class="fa fa-concierge-bell me-2"></i> Services</a>
+        <a class="mobile-link" href="#contact"> <i class="fa fa-envelope me-2"></i> Contact</a>
       </div>
     </div>
   </header>
 
   <!-- HERO -->
   <section id="home" class="hero">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-xl-7 col-lg-8 text-center">
-          <div class="eyebrow">WE BUILD • FIX • SCALE</div>
-          <h1 style="font-size:38px; font-weight:bold;">Reliable IT solutions for all businesses — <span style="color:var(--accent-2)">fast, secure, tidy.</span></h1>
-          <p class="lead">Tidy Techs helps startups, SMEs, Modern solutions without the corporate fluff.</p>
-          <div style="margin-top:18px;">
-            <a class="btn-primary-cta" href="#services">Our Services</a>
-            <a class="btn-outline" href="#contact" style="margin-left:10px;">Get a Quote</a>
-          </div>
-        </div>
+    <div class="container text-center">
+      <div class="eyebrow">WE BUILD • FIX • SCALE</div>
+      <h1>Reliable IT solutions for all businesses — <span style="color:var(--accent-2)">fast, secure, tidy.</span></h1>
+      <p class="lead">Tidy Techs helps startups, SMEs — modern solutions without the corporate fluff.</p>
+      <div style="margin-top:18px;">
+        <a class="btn-primary-cta" href="#services">Our Services</a>
+        <a class="btn-outline" href="#contact" style="margin-left:10px;">Get a Quote</a>
       </div>
     </div>
   </section>
@@ -80,13 +80,14 @@
   <main>
 
     <!-- ABOUT -->
-    <section id="about" class="section" style="background:#f0f4f8; border-top:1px solid rgba(0,0,0,0.08); border-bottom:1px solid rgba(0,0,0,0.08);">
+    <section id="about" class="section">
       <div class="container">
-        <div class="section-title center text-center">
-          <h2 style="font-weight:bold;">About Us</h2>
+        <div class="section-title text-center">
+          <h2>About Us</h2>
           <p class="muted">Tech solutions made simple — Pretoria friendly.</p>
         </div>
-        <p class="about-text text-center">Tidy Techs delivers honest, transparent IT services: from clean websites and mobile apps to network setups. We focus on practical, secure solutions that scale with your business.</p>
+
+        <p class="about-text text-center">Tidy Techs delivers honest, transparent IT services: clean websites, mobile apps and secure network setups. Practical solutions that scale.</p>
 
         <ul class="about-list text-center">
           <li>Website Development</li>
@@ -102,80 +103,88 @@
     </section>
 
     <!-- SERVICES -->
-    <section class="services section" id="services" style="background:#eef2f6; border-top:1px solid rgba(0,0,0,0.08); border-bottom:1px solid rgba(0,0,0,0.08);">
-      <h2 class="text-center" style="font-weight:bold; margin-bottom:25px;">Our Services</h2>
+    <section class="services section" id="services">
+      <h2 class="text-center">Our Services</h2>
       <div class="services-grid">
         <div class="service-card">
           <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80');"></div>
           <div class="body">
-            <h4 style="font-weight:bold;">🌐 Website Development</h4>
-            <p>Responsive, fast-loading, and fully optimized websites designed to capture attention and drive engagement.</p>
+            <h4>🌐 Website Development</h4>
+            <p>Responsive, fast-loading, and fully optimized websites to capture attention and drive engagement.</p>
           </div>
         </div>
 
         <div class="service-card">
           <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80');"></div>
           <div class="body">
-            <h4 style="font-weight:bold;">⚙️ Software Applications</h4>
-            <p>Custom-built software tailored to your business workflow—reliable, efficient, and secure systems that are high in performance.</p>
+            <h4>⚙️ Software Applications</h4>
+            <p>Custom apps and tools tailored to your workflow — reliable and secure.</p>
           </div>
         </div>
 
         <div class="service-card">
           <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80');"></div>
           <div class="body">
-            <h4 style="font-weight:bold;">🔧 Maintenance & Support</h4>
-            <p>Round-the-clock support to ensure your website and applications run smoothly and stay up-to-date.</p>
+            <h4>🔧 Maintenance & Support</h4>
+            <p>Ongoing support, updates and troubleshooting so your systems stay tidy and running.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section" style="background:#f0f4f8; border-top:1px solid rgba(0,0,0,0.08); border-bottom:1px solid rgba(0,0,0,0.08);">
+    <section id="contact" class="section">
       <div class="container">
         <div class="section-title text-center">
-          <h2 style="font-weight:bold;">Get in Touch</h2>
-          <p class="muted">Tell us your issue or project — we'll get back within 24 hours.</p>
+          <h2>Get in Touch</h2>
+          <p class="muted">Tell us your project or issue — we'll get back within 24 hours.</p>
         </div>
 
         <div class="row gy-4 justify-content-center text-center">
           <div class="col-md-6">
             <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+              <!-- access_key kept here; script also appends it to be safe -->
               <input type="hidden" name="access_key" value="f3dcdb82-b602-42f1-be7f-48961e9c1189">
-              <input type="hidden" name="redirect" value="https://yourgithubname.github.io/YourRepoName/success.html">
+              <!-- when using AJAX we will redirect client-side; keep redirect as fallback if you prefer server redirect -->
+              <input type="hidden" name="redirect" value="success.html">
+
               <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Full name" required></div>
               <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email address" required></div>
               <div class="mb-3"><input class="form-control" type="tel" name="phone" placeholder="Phone (optional)"></div>
               <div class="mb-3"><textarea class="form-control" name="message" rows="5" placeholder="Tell us about your needs" required></textarea></div>
+
               <button class="btn-primary-cta" type="submit">Send Message</button>
+              <div id="form-msg" style="margin-top:12px; font-weight:700;"></div>
             </form>
           </div>
 
           <div class="col-md-6">
             <div class="contact-card text-center">
-              <h5 style="font-weight:bold; margin-bottom:6px;">Hours</h5>
+              <h5 style="font-weight:700;">Hours</h5>
               <p>Mon — Fri: 08:00 — 17:00</p>
-              <div class="socials">
-                <h3 style="font-weight:bold;">Connect with us:</h3>
+
+              <div class="socials mt-3">
+                <h3 style="font-weight:700;">Connect with us:</h3>
                 <div class="social-links justify-content-center d-flex flex-wrap gap-2">
                   <a href="https://www.instagram.com/thee_other_jayy" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width:20px; height:20px;">
-                    @thee_other_jayy
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+                    <span>@thee_other_jayy</span>
                   </a>
                   <a href="https://www.facebook.com/Thee.other.jayy" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width:20px; height:20px;">
-                    Thee other jayy
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+                    <span>Thee other jayy</span>
                   </a>
                   <a href="https://twitter.com/thee_other_jayy" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" style="width:20px; height:20px;">
-                    @thee_other_jayy
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+                    <span>@thee_other_jayy</span>
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -189,10 +198,11 @@
     </div>
   </footer>
 
-  <!-- Custom JS -->
+  <!-- JS -->
   <script src="script.js"></script>
 
 </body>
 </html>
+
 
 
